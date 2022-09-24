@@ -1,12 +1,4 @@
-/* .container {
-    max-width: 960px;
-} */
-
-.full-width {
-    width: 100%;
-    height: 100%;
-    color: #39518eff;
-}
+/* Navbar */
 
 .btn-round {
     border-radius: 40px;
@@ -16,20 +8,29 @@
     padding: 0;
 }
 
-.crazy-background {
-    background-color: antiquewhite;
+.silk-background {
+    background-color: #fff;
+}
+
+/* Header and Title Section */
+
+.title-cta-buttons {
+    margin-top: 25px;
+    margin-right: 15px;
 }
 
 #title h1 {
-    font-weight: normal;
-    font-size: 4rem;
-    color:antiquewhite;
+    font-weight: bold;
+    font-size: 5.5rem;
+    color: #39518e;
+    line-height: .95;
+    letter-spacing: -2px;
 }
 
 #title .header-subtitle {
-    /* font-weight: 500; */
-    font-size: 2rem;
-    color: antiquewhite;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #4e635d;
     padding-top: 0;
 }
 
@@ -38,12 +39,72 @@
     letter-spacing: 3px;
 }
 
-.img-shadow {
-    filter: drop-shadow(2px 2px 10px #39518e);
-}
-
 .rounded-img {
-    border-radius: 50%;
+    border-radius: 100%;
     width: 114px;
     height: 114px;
+}
+
+.cta-image {
+    height: 100%;
+    width: 100%;
+}
+
+.cta-header {
+    font-weight: 800;
+    font-size: 2.3rem;
+    font-style: italic;
+    color: #39518e;
+    padding-bottom: 10px;
+}
+
+.cta-text {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.ap-text {
+    display: block;
+    padding-top: .9em;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.ld-header {
+    color: antiquewhite;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.ld-text {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: antiquewhite;
+}
+
+
+/* Como Funciona */
+
+.function-images img {
+    width: 10%
+}
+
+.header-cf {
+    color: #8be48b;
+    font-family: "Nunito Sans", sans-serif;
+    letter-spacing: 0px;
+}
+
+.hr-cf {
+    color: #8be48b;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: antiquewhite;
+    margin: 0px;
+    padding-bottom: 40px;
 }
