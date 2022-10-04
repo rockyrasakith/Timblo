@@ -161,7 +161,7 @@ body {
 .cta-span {
     color: #39518e;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     font-size: 24px;
 }
 
@@ -170,6 +170,25 @@ body {
     font-weight: 300;
     line-height: 1.5;
     color: #494848;
+    letter-spacing: 1px;
+}
+
+.cta-points {
+    background-image: url(./imgs/comofunc/favicon.png);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: left;
+    position: relative;
+    z-index: 1; 
+}
+
+.cta-points:before {
+    background-image: url(./imgs/comofunc/favicon.png);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    transform: rotate(30deg);
+    opacity: 0.5;
+    z-index: 1;
 }
 
 /* Footer */
