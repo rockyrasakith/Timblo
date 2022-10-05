@@ -22,6 +22,17 @@ body {
 
 /* Header and Title Section */
 
+.header-text {
+    font-weight: 800;
+    line-height: 1.2em;
+    font-size: 3rem;
+    color: #39518e;
+    letter-spacing: 1px;
+    width: 100%;
+    padding-bottom: 1rem !important;
+    text-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+}
+
 .title-cta-buttons {
     margin-top: 25px;
     margin-right: 15px;
@@ -32,31 +43,14 @@ body {
     line-height: 1.2em;
     padding-bottom: 1rem !important;
     color: #5f5a5a;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 .title-3 {
     font-size: 2.0em;
     line-height: 1.2em;
     font-weight: 800;
-    color: rgb(39, 37, 37);
-}
-
-.header-text {
-    font-weight: 800;
-    line-height: 1.2em;
-    font-size: 3rem;
-    color: #39518e;
-    letter-spacing: 1px;
-    width: 100%;
-    padding-bottom: 1rem !important;
-}
-
-#title .header-subtitle {
-    font-weight: 500;
-    font-size: 1.2em;
-    color: #4e635d;
-    padding-top: 0;
+    color: rgb(39, 37, 37, 0.9);
 }
 
 #title div {
@@ -88,26 +82,11 @@ body {
     font-weight: bold;
 }
 
-.ld-header {
-    color: #fff;
-    letter-spacing: 3px;
-    font-style: italic;
-    font-family: "Nunito Sans", sans-serif;
-}
-
-.ld-text {
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 100;
-    color: #fff;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
-
 .sponsor-img {
-    max-width: 300px;
+    max-width: 250px;
     height: 95%;
     margin: 0 25px;
+    opacity: .5;
 }
 
 .form-css {
@@ -118,7 +97,7 @@ body {
 /* Como Funciona */
 
 .function-images img {
-    width: 40%
+    width: 42%
 }
 
 .header-cf {
@@ -139,6 +118,7 @@ body {
     color: #fff;
     font-weight: 700;
     letter-spacing: 1px;
+    opacity: 1;
 }
 
 #como-funciona p {
@@ -146,6 +126,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.5;
+    opacity: 0.7;
 }
 
 #como-funciona hr {
@@ -153,6 +134,45 @@ body {
     border-top: 2px solid #8be48b;
     width: 100%;
     padding-top: 10px;
+}
+
+
+/* Long Description */
+
+.ld-text h4 {
+    line-height: 1.5;
+    color: rgb(255, 255, 255, 1);
+    letter-spacing: 0px;
+    padding-bottom: 1rem;
+    font-size: 22px;
+}
+
+.ld-cta {
+    color: rgb(255, 255, 255, 1);
+    font-weight: 800;
+}
+
+#ldpic1 {
+    position: relative;
+    margin-left: 5px;
+    margin-top: 150px;
+}
+
+#ldpic2 {
+    position: absolute;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+#ldpic3 {
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 90px;
+}
+
+.ldpics {
+    width: 220px;
+    opacity: .7;
 }
 
 
@@ -167,28 +187,28 @@ body {
 
 #cta p {
     font-size: 18px;
-    font-weight: 300;
     line-height: 1.5;
     color: #494848;
-    letter-spacing: 1px;
+}
+
+.cta-bg {
+    width: 460px;
+    height: 460px;
+    position: absolute;
+    margin-left: -200px;
+    z-index: -1;
+    opacity: .3;
+    transform: scaleX(-1);
 }
 
 .cta-points {
-    background-image: url(./imgs/comofunc/favicon.png);
-    background-repeat: no-repeat;
-    background-size: 400px 400px;
-    background-position: left;
-    position: relative;
-    z-index: 1; 
+    z-index: 1;
 }
 
-.cta-points:before {
-    background-image: url(./imgs/comofunc/favicon.png);
-    background-repeat: no-repeat;
-    background-size: 400px 400px;
-    transform: rotate(30deg);
-    opacity: 0.5;
-    z-index: 1;
+.final-cta-btn {
+    width: 250px;
+    text-shadow: 0px 0px 10px #fff;
+    box-shadow: 0px 0px 10px #000;
 }
 
 /* Footer */
@@ -204,14 +224,6 @@ footer {
 /* Responsive Media Queries */
 
 @media (max-width: 767px) {
-    #title h1 {
-        font-weight: bold;
-        font-size: 4rem;
-        color: #39518e;
-        line-height: .95;
-        letter-spacing: -2px;
-        text-align: center;
-    }
 
     #title .header-subtitle {
         font-weight: 500;
@@ -225,11 +237,6 @@ footer {
         text-align: center;
     }
 
-    /* .sponsor-img {
-        width: 40px;
-        height: 40px;
-    } */
-
     .final-cta-btn {
         width: 100%;
         margin-top: 15px;
@@ -242,16 +249,42 @@ footer {
     .form-cta {
         text-align: center;
     }
+
+    .ldpics {
+        width: 200px;
+        opacity: 1;
+    }
 }
 
 @media (max-width: 850px) {
-    #title h1 {
-        font-weight: bold;
-        font-size: 3.5rem;
-        color: #000;
-        line-height: 1.1;
-        letter-spacing: -2px;
-        padding-bottom: 15px;
+
+    .header-text {
+        font-weight: 800;
+        line-height: 1em;
+        font-size: 2.5rem;
+        color: #39518e;
+        letter-spacing: 1px;
+        width: 100%;
+        padding-bottom: 1rem !important;
+        text-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+        text-align: center;
+    }
+
+    .title-2 {
+        font-size: 1.5em;
+        line-height: 1em;
+        padding-bottom: 1rem !important;
+        color: #5f5a5a;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .title-3 {
+        font-size: 1.5em;
+        line-height: 1em;
+        font-weight: 800;
+        color: rgb(39, 37, 37, 0.9);
+        text-align: center;
     }
 
     .title-cta-buttons {
