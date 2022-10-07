@@ -21,7 +21,10 @@ body {
 }
 
 .cta-top {
-    box-shadow: 0px 0px 10px #000;
+    /* box-shadow: 0px 0px 10px #000; */
+    width: 100%;
+    font-weight: 800;
+    border: 1px solid black;
 }
 
 /* Header and Title Section */
@@ -35,6 +38,7 @@ body {
     width: 100%;
     padding-bottom: 1rem !important;
     text-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+    text-transform: capitalize;
 }
 
 .title-cta-buttons {
@@ -47,7 +51,8 @@ body {
     line-height: 1.2em;
     padding-bottom: 1rem !important;
     color: #5f5a5a;
-    font-weight: 500;
+    font-weight: 200;
+    text-decoration:solid;
 }
 
 .title-3 {
@@ -95,6 +100,13 @@ body {
 
 .form-css {
     color:#39518e;
+}
+
+.solicitar-btn {
+    padding-bottom: 8px;
+    width: 100%;
+    font-size: large;
+    font-weight: 800;
 }
 
 /* Como Funciona */
@@ -152,7 +164,7 @@ body {
     letter-spacing: 0px;
     padding-bottom: 1rem;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .ld-cta {
@@ -188,7 +200,6 @@ body {
 .cta-span {
     color: #39518e;
     font-weight: 700;
-    letter-spacing: 1.2px;
     font-size: 24px;
 }
 
@@ -196,7 +207,7 @@ body {
     font-size: 18px;
     line-height: 1.5;
     color: #494848;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .cta-bg {
@@ -214,8 +225,9 @@ body {
 }
 
 .final-cta-btn {
-    width: 250px;
-    text-shadow: 0px 0px 10px #fff;
+    width: 100%;
+    font-size: larger;
+    font-weight: 900;
     box-shadow: 0px 0px 10px #000;
 }
 
@@ -275,6 +287,7 @@ footer {
         margin-top: 1rem !important;
         text-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
         text-align: center;
+        text-transform: capitalize;
     }
 
     .title-2 {
