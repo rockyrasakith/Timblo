@@ -1,5 +1,9 @@
 body {
     font-family: "Nunito Sans", sans-serif;
+    background-image: url("./imgs/src-imgs/header-fondo.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-position-y: top;
 }
 
 /* Navbar */
@@ -8,12 +12,8 @@ body {
     border-radius: 40px;
 }
 
-.shadow {
-    box-shadow: 5px 50px rgb(0 0 0 / 15%);
-}
-
 .padding-zero {
-    padding: 0;
+    padding-bottom: 5px;
 }
 
 .silk-background {
@@ -21,45 +21,42 @@ body {
 }
 
 .cta-top {
-    box-shadow: 0px 0px 10px #000;
     width: 100%;
-    font-weight: 800;
-    /* border: 1px solid black; */
+    font-weight: 900;
+    font-size: 18px;
+    padding: none;
+    background-color: #39518e;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
 }
 
 /* Header and Title Section */
 
 .header-text {
-    font-weight: 800;
+    font-weight: 900;
     line-height: 1.2em;
     font-size: 3rem;
     color: #39518e;
     letter-spacing: 1px;
     width: 100%;
     padding-bottom: 1rem !important;
-    text-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
-    text-transform: capitalize;
-}
-
-.title-cta-buttons {
-    margin-top: 25px;
-    margin-right: 15px;
 }
 
 .title-2 {
-    font-size: 2em;
+    font-size: 1.6em;
     line-height: 1.2em;
     padding-bottom: 1rem !important;
-    color: #5f5a5a;
-    font-weight: 200;
+    color: #39518e;
+    font-weight: 500;
     text-decoration:solid;
 }
 
 .title-3 {
-    font-size: 2.0em;
+    font-size: 1.6em;
     line-height: 1.2em;
-    font-weight: 800;
-    color: rgb(39, 37, 37, 0.9);
+    font-weight: 600;
+    color: #39518e;
 }
 
 #title div {
@@ -96,10 +93,6 @@ body {
     height: 95%;
     margin: 0 25px;
     opacity: .5;
-}
-
-.form-css {
-    color:#39518e;
 }
 
 .solicitar-btn {
@@ -151,43 +144,20 @@ body {
     padding-top: 10px;
 }
 
-#como-funciona .container{
-    box-shadow: 0px 0px 10px #000;
-}
-
-
 /* Long Description */
 
 .ld-text h4 {
     line-height: 1.5;
-    color: rgb(255, 255, 255, 1);
     letter-spacing: 0px;
     padding-bottom: 1rem;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
-.ld-cta {
-    color: rgb(255, 255, 255, 1);
-    font-weight: 800;
-}
 
-#ldpic1 {
-    position: relative;
-    margin-left: 5px;
-    margin-top: 150px;
-}
-
-#ldpic2 {
-    position: absolute;
-    margin-left: 25px;
-    margin-bottom: 50px;
-}
-
-#ldpic3 {
-    position: absolute;
-    margin-left: -35px;
-    margin-top: 90px;
+.long-d-class {
+    background-color: #c5e2c5;
+    color: #39518e;
 }
 
 .ldpics {
@@ -356,7 +326,7 @@ footer {
     position: relative;
     width: 100vw;
     max-width: 100%;
-    height: 200px;
+    height: 150px;
     overflow-x: hidden;
   }
   
@@ -375,7 +345,7 @@ footer {
 
 .marquee {
     width: 100vw;
-    height: 20vh;
+    height: 25vh;
     background-color: lightgray;
     color: tomato;
     overflow: hidden;
