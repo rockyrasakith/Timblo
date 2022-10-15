@@ -122,12 +122,9 @@ body {
     text-transform: uppercase;
 }
 
-.hr-cf {
-    color: #8be48b;
-}
 
 #como-funciona h4 {
-    padding-bottom: 0px;
+    padding-bottom: 10%;
     color: #fff;
     font-weight: 700;
     letter-spacing: 1px;
@@ -135,18 +132,17 @@ body {
 }
 
 #como-funciona p {
-    color: #c1e5ef;
-    font-weight: 700;
+    color: #fff;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.5;
-    opacity: 0.7;
 }
 
 #como-funciona hr {
-    color: #8be48b;
-    border-top: 2px solid #8be48b;
-    width: 100%;
-    padding-top: 10px;
+    border-top: 12px dotted #42d942;
+    width: 40%;
+    padding-top: 10%;
+    margin:auto;
 }
 
 .mariposa {
@@ -387,3 +383,10 @@ footer {
     0% {transform: translateX(100vw); }
     100% {transform: translateX(-180vw); }
 }
+
+
+/* Custom HR styles */
+
+.dots {
+    
+  }
