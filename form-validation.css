@@ -4,7 +4,7 @@ body {
     background-position: center top;
     background-position-y: -80px;
     background-size: 100%;
-    background-image: url("./imgs/src-imgs/bg/fondo_main.jpg") !important;
+    background-image: url("./imgs/src-imgs/bg/fondo_main2.jpeg") !important;
     z-index: 1;
 }
 
@@ -108,7 +108,8 @@ body {
 /* Como Funciona */
 
 .function-images img {
-    width: 42%
+    width: 60%;
+    padding: 17px;
 }
 
 .header-cf {
