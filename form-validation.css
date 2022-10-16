@@ -23,7 +23,6 @@ body {
 }
 
 .cta-top {
-    width: 100%;
     font-weight: 900;
     font-size: 18px;
     padding: none;
@@ -216,6 +215,21 @@ footer {
     margin: 0px;
     padding-bottom: 40px;
     background-color: #94d88f;
+}
+
+.footer-logo {
+
+}
+
+.footer-social {
+    padding: 20px;
+    width: 40%;
+}
+
+.footer-email {
+    font-size: 20px;
+    color:#39518e;
+    font-weight: 900;
 }
 
 /* Responsive Media Queries */
