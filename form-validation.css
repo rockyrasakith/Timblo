@@ -32,6 +32,11 @@ body {
     text-transform: uppercase;
 }
 
+.form-cta {
+    display: flex;
+    margin: auto;
+}
+
 /* Header and Title Section */
 
 .header-text {
@@ -217,10 +222,6 @@ footer {
     background-color: #94d88f;
 }
 
-.footer-logo {
-
-}
-
 .footer-social {
     padding: 20px;
     width: 40%;
@@ -234,7 +235,87 @@ footer {
 
 /* Responsive Media Queries */
 
-@media (max-width: 767px) {
+@media (max-width: 850px) {
+    body {
+        background: none;
+        background-image: none !important;
+    }
+
+    #title .cta-video {
+        margin: auto !important;
+        padding: auto !important;
+        padding-right: 0%;
+
+    }
+
+    #title-buttons {
+        display: block;
+    }
+
+    .header-text {
+        font-size: 2.8rem;
+    }
+
+    .title-3 {
+        padding-top: 20px;
+    }
+
+    #validationCustom01 {
+        display: block;
+    }
+
+    .header-cf {
+        font-size: 1.7em;
+    }
+
+    #como-funciona p {
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    #como-funciona .container {
+        border-radius: 25px 25px 25px 25px !important;
+    }
+
+    .long-d-class {
+        border-radius: 25px 25px 25px 25px !important;
+    }
+
+    .long-d-class .ld-text {
+        padding-top: none !important;
+    }
+
+    .ld-text h4 {
+        padding: 15px !important;
+    }
+
+    #id-mariposa {
+        text-align: center;
+    }
+    
+    .mariposa {
+        width: 100px;
+        margin: auto;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-social {
+        width: 30%;
+    }
+
+    .footer-email-col {
+        text-align: center !important;
+    }
+
+    .cta-video {
+        width: 100% !important;
+        text-align: center !important;
+    }
 
     #title .header-subtitle {
         font-weight: 500;
@@ -248,9 +329,15 @@ footer {
         text-align: center;
     }
 
-    .final-cta-btn {
-        width: 100%;
-        margin-top: 15px;
+    .nav-button {
+        font-weight: 900;
+        width: min-content;
+        font-size: 12px;
+        padding: none;
+        background-color: #39518e;
+        border: none;
+        border-radius: 25px;
+        text-transform: uppercase;
     }
 
     .promo-video {
@@ -258,83 +345,52 @@ footer {
     }
 
     .form-cta {
+        display: block;
+        margin: auto;
         text-align: center;
+    }
+
+    .cta-email-btn {
+        margin-top: 10px;
+        width: fit-content;
     }
 
     .ldpics {
         width: 200px;
         opacity: 1;
     }
-}
 
-@media (max-width: 850px) {
-
-    .header-text {
-        font-weight: 800;
-        line-height: 1em;
-        font-size: 2.5rem;
-        color: #39518e;
-        letter-spacing: 1px;
-        width: 100%;
-        padding-bottom: 1rem !important;
-        margin-top: 1rem !important;
-        text-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
-        text-align: center;
-        text-transform: capitalize;
+    .marquee {
+        height: 15vh !important;
+        padding: none !important;
     }
 
-    .title-2 {
-        font-size: 1.5em;
-        line-height: 1em;
-        padding-bottom: 1rem !important;
-        color: #5f5a5a;
-        font-weight: 500;
-        text-align: center;
-    }
-    
-    .title-3 {
-        font-size: 1.5em;
-        line-height: 1em;
-        font-weight: 800;
-        color: rgb(39, 37, 37, 0.9);
-        text-align: center;
+    .sponsor-img {
+        margin: 10px;
     }
 
-    .title-cta-buttons {
-        margin: 0;
-    }
-
-    .form-cta {
-        text-align: center;
-    }
-
-    #email-form {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    #email-form .btn {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .function-images img {
-        width: 20%
-    }
-
-    #ldpic1 {
-        display: none;
-    }
-
-    #ldpic2 {
-        display: none;
-    }
-
-    #ldpic3 {
-        display: none;
+    .marquee-content {
+        list-style: none;
+        height: 100%;
+        display: flex;
+        animation: scrolling 20s linear infinite !important;
     }
 }
 
+@media (min-width: 1300px) {
+    body {
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-position-y: -150px;
+        background-size: 100%;
+        background-image: url("./imgs/src-imgs/bg/fondo_main2.jpeg") !important;
+        z-index: 1;
+    }
+
+    .long-d {
+        padding-bottom: 5% !important;
+    }
+}
 
 /* Marquee CSS */
 .marquee {
@@ -363,7 +419,6 @@ footer {
     width: 100vw;
     height: 25vh;
     background-color: lightgray;
-    color: tomato;
     overflow: hidden;
 }
 
@@ -387,20 +442,10 @@ footer {
     top: 0;
     width: 10rem;
     height: 100%;
-    /* content: ""; */
     z-index: 1;
   }
-
-
 
 @keyframes scrolling {
     0% {transform: translateX(100vw); }
     100% {transform: translateX(-180vw); }
 }
-
-
-/* Custom HR styles */
-
-.dots {
-    
-  }
