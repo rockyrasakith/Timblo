@@ -157,6 +157,7 @@ a {
 .mariposa {
     padding: 25px;
     width: 80%;
+    max-width: 200px;
 }
 
 /* Long Description */
@@ -242,8 +243,9 @@ footer {
 
 @media (max-width: 850px) {
     body {
-        background: none;
-        background-image: none !important;
+        background-position-y: -150px;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #title .cta-video {
@@ -394,6 +396,19 @@ footer {
 
     #long-d {
         padding-bottom: 6% !important;
+    }
+
+    .ld-text h4 {
+        line-height: 1.5;
+        letter-spacing: 0px;
+        padding: 30px 30px 35px 0px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .mariposa {
+        padding: 25px;
+        max-width: 200px !important;
     }
 }
 
