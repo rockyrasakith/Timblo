@@ -387,8 +387,8 @@ footer {
         z-index: 1;
     }
 
-    .long-d {
-        padding-bottom: 5% !important;
+    #long-d {
+        padding-bottom: 6% !important;
     }
 }
 
